@@ -144,15 +144,19 @@ function initAnimations() {
         observer.observe(el);
     });
 
-    // Add fade-in class to sections
+    // Add fade-in class to sections - DISABLED to prevent content disappearing
+    /*
     const sections = document.querySelectorAll('section');
     sections.forEach(section => {
         section.classList.add('fade-in');
     });
+    */
 
     // Typing animation for hero title
     const heroTitle = document.querySelector('.hero-title');
     if (heroTitle) {
+        // Disable typing animation to prevent content from disappearing
+        /*
         const text = heroTitle.textContent;
         heroTitle.textContent = '';
         heroTitle.style.opacity = '1';
@@ -168,6 +172,10 @@ function initAnimations() {
         
         // Start typing animation after a delay
         setTimeout(typeWriter, 500);
+        */
+        
+        // Keep the title visible without animation
+        heroTitle.style.opacity = '1';
     }
 }
 
