@@ -181,12 +181,14 @@ function initAnimations() {
 
 // Accessibility features
 function initAccessibility() {
-    // Skip to content link
+    // Skip to content link - REMOVED to prevent showing in top left corner
+    /*
     const skipLink = document.createElement('a');
     skipLink.href = '#main-content';
     skipLink.textContent = 'Skip to main content';
     skipLink.className = 'skip-link';
     document.body.insertBefore(skipLink, document.body.firstChild);
+    */
 
     // Add main content id if not present
     const mainContent = document.querySelector('main') || document.querySelector('.hero');

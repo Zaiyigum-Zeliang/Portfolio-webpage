@@ -1569,7 +1569,8 @@ a:hover {
     }
 }
 
-/* Animation Classes */
+/* Animation Classes - DISABLED to prevent content disappearing */
+/*
 .fade-in {
     opacity: 0;
     transform: translateY(30px);
@@ -1580,6 +1581,7 @@ a:hover {
     opacity: 1;
     transform: translateY(0);
 }
+*/
 
 /* Focus Styles for Accessibility */
 button:focus,
