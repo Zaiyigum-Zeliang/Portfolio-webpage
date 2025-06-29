@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the projects of Zaiyigum Zeliang - Software Developer and Designer. View web applications, mobile apps, and design work.">
+    <meta name="keywords" content="projects, portfolio, web development, design, case studies, zaiyigum zeliang">
+    <meta name="author" content="Zaiyigum Zeliang">
+    <meta property="og:title" content="Projects - Zaiyigum Zeliang">
+    <meta property="og:description" content="Explore the projects of Zaiyigum Zeliang - Software Developer and Designer. View web applications, mobile apps, and design work.">
+    <meta name="twitter:title" content="Projects - Zaiyigum Zeliang">
+    <meta name="twitter:description" content="Explore the projects of Zaiyigum Zeliang - Software Developer and Designer. View web applications, mobile apps, and design work.">
+    
+    <title>Projects - Zaiyigum Zeliang</title>
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/themes.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+</head>
+<body class="light-theme">
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">ZG</a>
+            </div>
+            
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="projects.html" class="nav-link active">Projects</a>
+                <a href="skills.html" class="nav-link">Skills</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            
+            <div class="nav-controls">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="tts-toggle" id="tts-toggle" aria-label="Toggle text-to-speech">
+                    <i class="fas fa-volume-up"></i>
+                </button>
+                <button class="stt-toggle" id="stt-toggle" aria-label="Toggle speech-to-text">
+                    <i class="fas fa-microphone"></i>
+                </button>
+                <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">My Projects</h1>
+            <p class="page-subtitle">A showcase of my latest work and achievements</p>
+        </div>
+    </section>
+
+    <!-- Project Filters -->
+    <section class="project-filters">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="web">Web Development</button>
+                <button class="filter-btn" data-filter="design">UI/UX Design</button>
+                <button class="filter-btn" data-filter="mobile">Mobile Apps</button>
+                <button class="filter-btn" data-filter="branding">Branding</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Grid -->
+    <section class="projects-showcase">
+        <div class="container">
+            <div class="projects-grid" id="projects-grid">
+                <!-- Web Development Projects -->
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link-btn" aria-label="View live project">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-link-btn" aria-label="View source code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>E-Commerce Platform</h3>
+                        <p>A modern e-commerce solution with advanced features including user authentication, payment processing, and inventory management.</p>
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">MongoDB</span>
+                            <span class="tag">Stripe</span>
+                        </div>
+                        <div class="project-details">
+                            <div class="project-detail">
+                                <span class="detail-label">Client:</span>
+                                <span class="detail-value">TechStart Inc.</span>
+                            </div>
+                            <div class="project-detail">
+                                <span class="detail-label">Duration:</span>
+                                <span class="detail-value">3 months</span>
+                            </div>
+                            <div class="project-detail">
+                                <span class="detail-label">Role:</span>
+                                <span class="detail-value">Full Stack Developer</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link-btn" aria-label="View live project">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-link-btn" aria-label="View source code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Analytics Dashboard</h3>
+                        <p>Real-time analytics dashboard with interactive charts, data visualization, and customizable reporting features.</p>
+                        <div class="project-tags">
+                            <span class="tag">Vue.js</span>
+                            <span class="tag">D3.js</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">PostgreSQL</span>
+                        </div>
+                        <div class="project-details">
+                            <div class="project-detail">
+                                <span class="detail-label">Client:</span>
+                                <span class="detail-value">DataCorp</span>
+                            </div>
+                            <div class="project-detail">
+                                <span class="detail-label">Duration:</span>
+                                <span class="detail-value">4 months</span>
+                            </div>
+                            <div class="project-detail">
+                                <span class="detail-label">Role:</span>
+                                <span class="detail-value">Frontend Developer</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- UI/UX Design Projects -->
+                <div class="project-card" data-category="design">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link-btn" aria-label="View design">
+                                    <i class="fab fa-figma"></i>
+                                </a>
+                                <a href="#" class="project-link-btn" aria-label="View prototype">
+                                    <i class="fas fa-play"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Fitness App Design</h3>
+                        <p>Complete UI/UX design for a fitness tracking mobile application with workout planning and progress monitoring.</p>
+                        <div class="project-tags">
+                            <span class="tag">Figma</span>
+                            <span class="tag">Prototyping</span>
+                            <span class="tag">User Research</span>
+                            <span class="tag">Design System</span>
+                        </div>
+                        <div class="project-details">
+                            <div class="project-detail">
+                                <span class="detail-label">Client:</span>
+                                <span class="detail-value">FitLife</span>
+                            </div>
+                            <div class="project-detail">
+                                <span class="detail-label">Duration:</span>
+                                <span class="detail-value">2 months</span>
+                            </div>
+                            <div class="project-detail">
+                                <span class="detail-label">Role:</span>
+                                <span class="detail-value">UI/UX Designer</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="design">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-desktop"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link-btn" aria-label="View design">
+                                    <i class="fab fa-figma"></i>
+                                </a>
+                                <a href="#" class="project-link-btn" aria-label="View prototype">
+                                    <i class="fas fa-play"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Banking Website Redesign</h3>
+                        <p>Complete redesign of a banking website focusing on improved user experience and accessibility compliance.</p>
+                        <div class="project-tags">
+                            <span class="tag">Adobe XD</span>
+                            <span class="tag">User Testing</span>
+                            <span class="tag">Accessibility</span>
+                            <span class="tag">Responsive Design</span>
+                        </div>
+                        <div class="project-details">
+                            <div class="project-detail">
+                                <span class="detail-label">Client:</span>
+                                <span class="detail-value">SecureBank</span>
+                            </div>
+                            <div class="project-detail">
+                                <span class="detail-label">Duration:</span>
+                                <span class="detail-value">3 months</span>
+                            </div>
+                            <div class="project-detail">
+                                <span class="detail-label">Role:</span>
+                                <span class="detail-value">Lead Designer</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mobile App Projects -->
+                <div class="project-card" data-category="mobile">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-car"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link-btn" aria-label="View app">
+                                    <i class="fab fa-app-store"></i>
+                                </a>
+                                <a href="#" class="project-link-btn" aria-label="View source code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Ride-Sharing App</h3>
+                        <p>Cross-platform mobile application for ride-sharing with real-time tracking, payment integration, and driver-rider matching.</p>
+                        <div class="project-tags">
+                            <span class="tag">React Native</span>
+                            <span class="tag">Firebase</span>
+                            <span class="tag">Google Maps</span>
+                            <span class="tag">Stripe</span>
+                        </div>
+                        <div class="project-details">
+                            <div class="project-detail">
+                                <span class="detail-label">Client:</span>
+                                <span class="detail-value">RideShare Co.</span>
+                            </div>
+                            <div class="project-detail">
+                                <span class="detail-label">Duration:</span>
+                                <span class="detail-value">6 months</span>
+                            </div>
+                            <div class="project-detail">
+                                <span class="detail-label">Role:</span>
+                                <span class="detail-value">Mobile Developer</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Branding Projects -->
+                <div class="project-card" data-category="branding">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link-btn" aria-label="View brand guide">
+                                    <i class="fas fa-book"></i>
+                                </a>
+                                <a href="#" class="project-link-btn" aria-label="View portfolio">
+                                    <i class="fas fa-images"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Startup Brand Identity</h3>
+                        <p>Complete brand identity design including logo, color palette, typography, and brand guidelines for a tech startup.</p>
+                        <div class="project-tags">
+                            <span class="tag">Logo Design</span>
+                            <span class="tag">Brand Guidelines</span>
+                            <span class="tag">Typography</span>
+                            <span class="tag">Color Theory</span>
+                        </div>
+                        <div class="project-details">
+                            <div class="project-detail">
+                                <span class="detail-label">Client:</span>
+                                <span class="detail-value">InnovateTech</span>
+                            </div>
+                            <div class="project-detail">
+                                <span class="detail-label">Duration:</span>
+                                <span class="detail-value">1 month</span>
+                            </div>
+                            <div class="project-detail">
+                                <span class="detail-label">Role:</span>
+                                <span class="detail-value">Brand Designer</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="branding">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-coffee"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link-btn" aria-label="View brand guide">
+                                    <i class="fas fa-book"></i>
+                                </a>
+                                <a href="#" class="project-link-btn" aria-label="View portfolio">
+                                    <i class="fas fa-images"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Coffee Shop Branding</h3>
+                        <p>Complete branding package for a local coffee shop including logo, packaging design, and marketing materials.</p>
+                        <div class="project-tags">
+                            <span class="tag">Logo Design</span>
+                            <span class="tag">Packaging</span>
+                            <span class="tag">Marketing</span>
+                            <span class="tag">Illustration</span>
+                        </div>
+                        <div class="project-details">
+                            <div class="project-detail">
+                                <span class="detail-label">Client:</span>
+                                <span class="detail-value">Brew & Bean</span>
+                            </div>
+                            <div class="project-detail">
+                                <span class="detail-label">Duration:</span>
+                                <span class="detail-value">2 months</span>
+                            </div>
+                            <div class="project-detail">
+                                <span class="detail-label">Role:</span>
+                                <span class="detail-value">Brand Designer</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Stats -->
+    <section class="project-stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <h3>50+</h3>
+                    <p>Projects Completed</p>
+                </div>
+                <div class="stat-item">
+                    <h3>30+</h3>
+                    <p>Happy Clients</p>
+                </div>
+                <div class="stat-item">
+                    <h3>5+</h3>
+                    <p>Years Experience</p>
+                </div>
+                <div class="stat-item">
+                    <h3>100%</h3>
+                    <p>Client Satisfaction</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2>Have a Project in Mind?</h2>
+            <p>Let's discuss how I can help bring your ideas to life</p>
+            <a href="contact.html" class="btn btn-primary">Start a Project</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Zaiyigum Zeliang</h3>
+                    <p>Creating digital experiences that matter.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="skills.html">Skills</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li>Web Development</li>
+                        <li>UI/UX Design</li>
+                        <li>Mobile Apps</li>
+                        <li>Brand Identity</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> hello@zaiyigumzeliang.com</li>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-map-marker-alt"></i> New York, NY</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Zaiyigum Zeliang. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Accessibility Features -->
+    <div class="accessibility-panel" id="accessibility-panel">
+        <div class="accessibility-content">
+            <h3>Accessibility Options</h3>
+            <div class="accessibility-controls">
+                <button class="accessibility-btn" id="increase-font">A+</button>
+                <button class="accessibility-btn" id="decrease-font">A-</button>
+                <button class="accessibility-btn" id="high-contrast">High Contrast</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/accessibility.js"></script>
+    <script src="js/tts.js"></script>
+    <script src="js/stt.js"></script>
+    <script src="js/projects.js"></script>
+</body>
+</html> 
