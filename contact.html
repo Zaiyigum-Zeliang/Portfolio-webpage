@@ -21,13 +21,30 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    
+    <!-- Emergency styles to ensure content visibility -->
+    <style>
+        body { 
+            font-family: Arial, sans-serif !important; 
+            color: #000 !important; 
+            background: #fff !important; 
+        }
+        .hero-title, .hero-subtitle, .hero-description, .section-title, .stat-item h3, .stat-item p, .project-content h3, .project-content p, .page-title, .page-subtitle, h1, h2, h3, h4, h5, h6, p {
+            color: #000 !important;
+            font-family: Arial, sans-serif !important;
+        }
+        .fade-in { opacity: 1 !important; transform: none !important; }
+    </style>
 </head>
 <body class="light-theme">
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <a href="index.html">ZG</a>
+                <a href="index.html">
+                    <span class="logo-symbol">&lt;z/z&gt;</span>
+                    <span class="logo-text">Zaiyigum Zeliang</span>
+                </a>
             </div>
             
             <div class="nav-menu" id="nav-menu">

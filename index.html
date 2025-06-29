@@ -24,16 +24,64 @@
     
     <!-- Emergency styles to ensure content visibility -->
     <style>
+        /* Force all content to be visible */
+        * { 
+            font-family: Arial, sans-serif !important; 
+        }
+        
         body { 
             font-family: Arial, sans-serif !important; 
             color: #000 !important; 
             background: #fff !important; 
+            margin: 0 !important;
+            padding: 0 !important;
         }
-        .hero-title, .hero-subtitle, .hero-description, .section-title, .stat-item h3, .stat-item p, .project-content h3, .project-content p {
+        
+        /* Force all text elements to be visible */
+        h1, h2, h3, h4, h5, h6, p, span, div, a, li {
             color: #000 !important;
             font-family: Arial, sans-serif !important;
+            opacity: 1 !important;
+            visibility: visible !important;
         }
-        .fade-in { opacity: 1 !important; transform: none !important; }
+        
+        /* Specific overrides for key elements */
+        .hero-title, .hero-subtitle, .hero-description, 
+        .section-title, .stat-item h3, .stat-item p, 
+        .project-content h3, .project-content p, 
+        .page-title, .page-subtitle {
+            color: #000 !important;
+            font-family: Arial, sans-serif !important;
+            opacity: 1 !important;
+            visibility: visible !important;
+            display: block !important;
+        }
+        
+        /* Disable all animations and transitions */
+        .fade-in { 
+            opacity: 1 !important; 
+            transform: none !important; 
+            transition: none !important;
+        }
+        
+        /* Ensure sections are visible */
+        section {
+            opacity: 1 !important;
+            visibility: visible !important;
+            display: block !important;
+        }
+        
+        /* Force container visibility */
+        .container {
+            opacity: 1 !important;
+            visibility: visible !important;
+        }
+        
+        /* Debug: Add borders to see layout */
+        .hero, .stats, .featured-projects, .skills-preview, .cta {
+            border: 2px solid red !important;
+            min-height: 100px !important;
+        }
     </style>
 </head>
 <body class="light-theme">
