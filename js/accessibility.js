@@ -326,6 +326,29 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Initialize focus management
     window.accessibilityManager.initFocusManagement();
+
+    const accBtn = document.getElementById('accessibility-toggle');
+    const accPopup = document.getElementById('accessibility-popup');
+
+    if (accBtn && accPopup) {
+        // Show on hover/focus
+        accBtn.addEventListener('mouseenter', () => accPopup.classList.add('show'));
+        accBtn.addEventListener('focus', () => accPopup.classList.add('show'));
+        // Hide on mouseleave/blur
+        accBtn.addEventListener('mouseleave', () => accPopup.classList.remove('show'));
+        accBtn.addEventListener('blur', () => accPopup.classList.remove('show'));
+        // Also show when popup is hovered/focused
+        accPopup.addEventListener('mouseenter', () => accPopup.classList.add('show'));
+        accPopup.addEventListener('focusin', () => accPopup.classList.add('show'));
+        // Hide when mouse leaves popup or focus leaves
+        accPopup.addEventListener('mouseleave', () => accPopup.classList.remove('show'));
+        accPopup.addEventListener('focusout', (e) => {
+            // Only hide if focus moves outside popup and button
+            if (!accPopup.contains(e.relatedTarget) && e.relatedTarget !== accBtn) {
+                accPopup.classList.remove('show');
+            }
+        });
+    }
 });
 
 // Add screen reader only class
