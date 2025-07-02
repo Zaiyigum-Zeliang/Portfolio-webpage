@@ -1,0 +1,46 @@
+/* text-styles.css: Centralized text and link color styles for theme support */
+
+body {
+    color: var(--text-primary);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--text-primary);
+}
+
+p, .lead, .hero-description, .project-content p, .about-text .lead, .stat-item p, .about-stats .stat p, .faq-item p, .footer-section p, .contact-details p, .timeline-content h4, .skill-item, .skill-tag, .tag, .detail-value, .shortcuts-content span, .shortcut-item span {
+    color: var(--text-secondary);
+}
+
+a, .project-link, .contact-details a, .footer-section ul li a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color var(--transition-fast);
+}
+
+a:hover, .project-link:hover, .contact-details a:hover, .footer-section ul li a:hover {
+    color: var(--secondary-color);
+}
+
+.logo-text, .detail-label, .page-title, .section-title, .about-text h2, .project-content h3, .faq-item h3, .contact-details h3, .footer-section h3, .footer-section h4, .timeline-content h3, .skill-name, .stat-item h3, .category-header i, .certification-card h3, .interest-item h3, .value-card h3, .education-content h3, .institution {
+    color: var(--text-primary);
+}
+
+.year, .footer-bottom {
+    color: var(--text-muted);
+}
+
+/* Button and interactive text */
+.btn-primary, .project-link-btn, .profile-placeholder, .social-links a, .filter-btn.active, .shortcut-item kbd, .theme-option.active {
+    color: white;
+}
+
+.btn-secondary, .filter-btn, .skill-tag, .shortcut-item, .project-tag, .tag {
+    color: var(--text-secondary);
+}
+
+/* Muted/disabled text */
+.muted, .disabled, .project-placeholder {
+    color: var(--text-muted);
+    opacity: 0.7;
+} 
