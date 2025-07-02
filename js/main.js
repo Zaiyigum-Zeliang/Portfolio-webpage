@@ -52,6 +52,14 @@ function initNavigation() {
 function initThemeSystem() {
     const themeToggle = document.getElementById('theme-toggle');
     const themes = ['light', 'dark', 'high-contrast', 'blue', 'green', 'purple'];
+    const themeNames = {
+        'light': 'Light',
+        'dark': 'Dark',
+        'high-contrast': 'Clarity',
+        'blue': 'Oceanic',
+        'green': 'Verdant',
+        'purple': 'Amethyst'
+    };
     let currentThemeIndex = 0;
 
     // Load saved theme from localStorage
@@ -65,6 +73,7 @@ function initThemeSystem() {
     // Theme toggle functionality
     if (themeToggle) {
         themeToggle.addEventListener('click', function() {
+            const oldTheme = themes[currentThemeIndex];
             currentThemeIndex = (currentThemeIndex + 1) % themes.length;
             const newTheme = themes[currentThemeIndex];
             
@@ -75,6 +84,11 @@ function initThemeSystem() {
             document.documentElement.setAttribute('data-theme', newTheme);
             localStorage.setItem('portfolio-theme', newTheme);
             updateThemeIcon(newTheme);
+            
+            // Show notification
+            if (window.accessibilityManager && typeof window.accessibilityManager.showNotification === 'function') {
+                window.accessibilityManager.showNotification(`Theme changed from \"${themeNames[oldTheme]}\" to \"${themeNames[newTheme]}\"`);
+            }
             
             // Remove transition class after animation
             setTimeout(() => {
