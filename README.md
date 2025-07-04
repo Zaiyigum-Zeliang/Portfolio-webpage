@@ -57,7 +57,7 @@ A modern, accessible, and feature-rich portfolio website showcasing the work and
    cd portfolio-website
    ```
 
-2. Open `index.html` in your web browser or serve locally:
+2. Open `home.html` in your web browser or serve locally:
    ```bash
    # Using Python
    python -m http.server 8000
@@ -69,20 +69,21 @@ A modern, accessible, and feature-rich portfolio website showcasing the work and
    php -S localhost:8000
    ```
 
-3. Visit `http://localhost:8000` in your browser
+3. Visit `http://localhost:8000/home.html` in your browser
 
 ## 📁 Project Structure
 
 ```
 portfolio-website/
-├── index.html              # Home page
+├── home.html               # Home page (was index.html)
 ├── about.html              # About page
 ├── projects.html           # Projects page
 ├── skills.html             # Skills page
 ├── contact.html            # Contact page
 ├── css/
 │   ├── style.css           # Main stylesheet
-│   └── themes.css          # Theme system
+│   ├── themes.css          # Theme system
+│   └── text-styles.css     # Centralized text styles
 ├── js/
 │   ├── main.js             # Core functionality
 │   ├── accessibility.js    # Accessibility features
@@ -90,11 +91,27 @@ portfolio-website/
 │   ├── stt.js              # Speech-to-text
 │   ├── projects.js         # Project filtering
 │   ├── skills.js           # Skill animations
-│   └── contact.js          # Contact form
+│   ├── contact.js          # Contact form
+│   └── buttons.js          # Centralized button logic
 ├── assets/                 # Images and media files
 ├── README.md               # Project documentation
 └── .gitignore              # Git ignore rules
 ```
+
+## 🖼️ Font Awesome Usage
+
+- The project uses [Font Awesome 6](https://fontawesome.com/) via CDN:
+  ```html
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  ```
+- Use the new icon class names, e.g.:
+  ```html
+  <i class="fa-solid fa-moon"></i>
+  <i class="fa-solid fa-volume-up"></i>
+  <i class="fa-solid fa-microphone"></i>
+  <i class="fa-solid fa-universal-access"></i>
+  ```
+- Make sure the CDN link is placed before your own CSS files for best results.
 
 ## 🎯 Customization
 
